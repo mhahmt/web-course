@@ -1,0 +1,79 @@
+
+@media screen and (max-width: 600px) {
+.mo-fixed{
+	position: fixed;
+}
+.margin-top{
+	margin-top: 20vh; 
+}
+
+.w-20{
+	width: auto;
+}
+
+.mo-white{
+	background-color: #fff;
+	width: 90%
+}
+.mo-white:after{
+content: " ";
+clear: both;
+}
+}
+
+
+[class~=teal-1]{
+	cursor: pointer; 
+}
+
+progress {
+  width: 200px;
+  height: 15px;
+  margin: 1em auto;
+  padding: 2px;
+  border: 0 none;
+  background: #444;
+  border-radius: 14px;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+progress::-webkit-progress-bar {
+    background: transparent;
+}  
+progress::-webkit-progress-value {  
+  border-radius: 12px;
+  background: #00f000;
+  box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4), 0 2px 5px 0px rgba(0,0,0,0.3); 
+}
+.m-loader{
+z-index:3;
+display: block;
+padding-top:100px;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+overflow:auto;
+background-color:rgb(0,0,0);
+background-color:rgba(0,0,0,0.4)
+}
+.c-loader{
+margin:auto;
+background-color: transparent;
+position:relative;
+padding:0;
+outline:0;
+width:600px
+}
+
+.loader{
+ position: absolute;
+left: 45%;
+width: 75px;
+height: 75px;
+border: 10px solid;
+border-color: grey lightgrey grey grey !important;
+border-radius:50%;
+animation: spin-loader 1s infinite linear}
+@keyframes spin-loader{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
